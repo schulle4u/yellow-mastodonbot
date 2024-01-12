@@ -44,7 +44,7 @@ class YellowMastodonbot {
  * MastodonBotPHP
  * A very simple PHP Mastodon API for sending statuses
  * Please report bugs on https://github.com/Eleirbag89/MastodonBotPHP/issues
- * @package Minify
+ * @package MastodonbotPHP
  * @author Gabriele Grillo <gabry.grillo@alice.it>
  * @copyright Copyright (c) 2020 Gabriele Grillo
  * @license MIT License
