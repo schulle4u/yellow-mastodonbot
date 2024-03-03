@@ -11,6 +11,8 @@ class YellowMastodonbot {
         $this->yellow->system->setDefault("mastodonbotApiKey", "");
         $this->yellow->system->setDefault("mastodonbotInstance", "mastodon.social");
         $this->yellow->system->setDefault("mastodonbotVisibility", "public");
+        $this->yellow->system->setDefault("mastodonbotMaxChars", "500");
+        $this->yellow->system->setDefault("mastodonbotTemplate", "@title @url");
     }
 
     // Handle content file changes
@@ -23,11 +25,15 @@ class YellowMastodonbot {
                 $this->yellow->system->get("coreServerBase"),
                 $page->location
             );
+            $content = $this->yellow->toolbox->createTextDescription($page->getContentHtml(), $this->yellow->system->get("mastodonbotMaxChars"), true, "<!--more-->");
             $language = $page->get("language");
             $apiKey = $this->yellow->system->get("mastodonbotApiKey");
             $instance = "https://".$this->yellow->system->get("mastodonbotInstance");
             $visibility = $this->yellow->system->get("mastodonbotVisibility");
-            $statusTemplate = $title." ".$url;
+            $statusTemplate = $this->yellow->system->get("mastodonbotTemplate");
+            $statusTemplate = preg_replace("/@title/i", $title, $statusTemplate);
+            $statusTemplate = preg_replace("/@content/i", $content, $statusTemplate);
+            $statusTemplate = preg_replace("/@url/i", $url, $statusTemplate);
             
             $statusData = array(
                 "status" => $statusTemplate,
