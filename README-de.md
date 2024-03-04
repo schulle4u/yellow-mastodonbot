@@ -34,6 +34,14 @@ Die folgenden Einstellungen können in der Datei `system/extensions/yellow-system
 `MastodonbotApiKey` = Der Zugriffs-Token für deine Mastodon-Instanz  
 `MastodonbotInstance` = Hostname deiner Mastodon-Instanz  
 `MastodonbotVisibility` = Sichtbarkeit der veröffentlichten Seiten (public, unlisted oder private)  
+`MastodonbotMaxChars` = Maximale Zeichenanzahl für die Seitenzusammenfassung  
+`MastodonbotTemplate` = Vorlage für Mastodonbeiträge  
+
+Die folgenden Platzhalter können in der Beitragsvorlage verwendet werden:
+
+`@title` = Seitentitel  
+`@content` = Seitenauszug  
+`@url` = Seiten-URL  
 
 ## Danksagung
 

@@ -34,6 +34,14 @@ The following settings can be configured in file `system/extensions/yellow-syste
 `MastodonbotApiKey` = The access token for your Mastodon instance  
 `MastodonbotInstance` = Your Mastodon instance's hostname  
 `MastodonbotVisibility` = visibility of published pages (public, unlisted, or private)  
+`MastodonbotMaxChars` = Maximum characters for page summary  
+`MastodonbotTemplate` = Template for Mastodon posts  
+
+The following placeholders are supported in the post template:
+
+`@title` = page title  
+`@content` = page excerpt  
+`@url` = page URL  
 
 ## Acknowledgements
 
