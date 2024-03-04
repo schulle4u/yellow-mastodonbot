@@ -25,7 +25,7 @@ class YellowMastodonbot {
                 $this->yellow->system->get("coreServerBase"),
                 $page->location
             );
-            $content = $this->yellow->toolbox->createTextDescription($page->getContentHtml(), $this->yellow->system->get("mastodonbotMaxChars"), true, "<!--more-->");
+            $content = $this->yellow->toolbox->createTextDescription($this->yellow->page->getContentHtml(), $this->yellow->system->get("mastodonbotMaxChars"), true, "<!--more-->");
             $language = $page->get("language");
             $apiKey = $this->yellow->system->get("mastodonbotApiKey");
             $instance = "https://".$this->yellow->system->get("mastodonbotInstance");
