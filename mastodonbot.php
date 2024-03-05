@@ -11,7 +11,7 @@ class YellowMastodonbot {
         $this->yellow->system->setDefault("mastodonbotApiKey", "");
         $this->yellow->system->setDefault("mastodonbotInstance", "mastodon.social");
         $this->yellow->system->setDefault("mastodonbotVisibility", "public");
-        $this->yellow->system->setDefault("mastodonbotMaxChars", "500");
+        $this->yellow->system->setDefault("mastodonbotMaxChars", "280");
         $this->yellow->system->setDefault("mastodonbotTemplate", "@title @url");
     }
 
