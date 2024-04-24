@@ -1,6 +1,6 @@
 <p align="right"><a href="README-de.md">Deutsch</a> &nbsp; <a href="README.md">English</a></p>
 
-# Mastodonbot 0.8.1
+# Mastodonbot 0.9.1
 
 Neue Seiten automatisch auf Mastodon veröffentlichen.
 
@@ -12,6 +12,8 @@ Neue Seiten automatisch auf Mastodon veröffentlichen.
 ## Wie man neue Seiten auf Mastodon veröffentlicht
 
 Erstelle zuerst eine neue App im Entwicklerbereich deiner Mastodon-Instanz, anschließend hinterlege den generierten Zugriffs-Token sowie deinen Instanz-Hostnamen in der Datei `system/extensions/yellow-system.ini`. Jede neue Seite wird bei der Erstellung auf Mastodon veröffentlicht. Setze `Mastodon: exclude` in den [Seiteneinstellungen](https://github.com/annaesvensson/yellow-core#settings-page), um dies für bestimmte Seiten zu verhindern. 
+
+**Hinweis**: Auch wenn die Erweiterung technisch korrekt umgesetzt sein sollte, funktioniert sie noch nicht wie erwartet und weitere Untersuchungen sind notwendig. Bitte verwende diese Erweiterung daher nicht in Produktionsumgebungen, bis eine Ankündigung [im Diskussionsbereich](https://github.com/datenstrom/yellow/discussions) bei datenstrom/yellow gemacht wurde. Falls du mit Ideen oder Lösungen helfen kannst, füge sie der [Diskussion #944](https://github.com/datenstrom/yellow/discussions/944) hinzu. 
 
 ## Beispiele
 

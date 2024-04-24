@@ -2,7 +2,7 @@
 // Mastodonbot extension, https://github.com/schulle4u/yellow-mastodonbot
 
 class YellowMastodonbot {
-    const VERSION = "0.8.1";
+    const VERSION = "0.9.1";
     public $yellow;         // access to API
     
     // Handle initialisation
@@ -17,7 +17,7 @@ class YellowMastodonbot {
 
     // Handle content file changes
     public function onEditContentFile($page, $action, $email) {
-        if ($action=="edit" && !preg_match("/exclude/i", $page->get("mastodon"))) {
+        if ($action=="create" && !preg_match("/exclude/i", $page->get("mastodon"))) {
             $title = $page->get("title");
             $url = $this->yellow->lookup->normaliseUrl(
                 $this->yellow->system->get("coreServerScheme"),
@@ -43,7 +43,7 @@ class YellowMastodonbot {
             $mastodon = new MastodonAPI($apiKey, $instance);
             $mastodon->postStatus($statusData);
         }
-    }    
+    }
 }
 
 /**
