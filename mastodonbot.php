@@ -17,14 +17,9 @@ class YellowMastodonbot {
 
     // Handle content file changes
     public function onEditContentFile($page, $action, $email) {
-        if ($action=="create" && !preg_match("/exclude/i", $page->get("mastodon"))) {
+        if ($action=="create" && !$page->isError() && !preg_match("/exclude/i", $page->get("mastodon"))) {
             $title = $page->get("title");
-            $url = $this->yellow->lookup->normaliseUrl(
-                $this->yellow->system->get("coreServerScheme"),
-                $this->yellow->system->get("coreServerAddress"),
-                $this->yellow->system->get("coreServerBase"),
-                $page->location
-            );
+            $url = $page->GetUrl(true);
             $content = $this->yellow->toolbox->createTextDescription($page->getContentHtml(), $this->yellow->system->get("mastodonbotMaxChars"), true, "<!--more-->");
             $language = $page->get("language");
             $apiKey = $this->yellow->system->get("mastodonbotApiKey");

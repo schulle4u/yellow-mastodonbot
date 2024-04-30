@@ -13,8 +13,6 @@ Automatically publish new pages on Mastodon.
 
 First create a new application in the development tab of your Mastodon instance, then insert the generated access token and your instance's hostname into your `system/extensions/yellow-system.ini`. Every new page will automatically be published on mastodon upon creation. If you don't want a page to be published, set `Mastodon: exclude` in the [page settings](https://github.com/annaesvensson/yellow-core#settings-page). 
 
-**Note**: While technically correct, this extension currently doesn't work as expected and needs further investigation. Please don't use it in production environments until an announcement has been made in the [discussions section](https://github.com/datenstrom/yellow/discussions) at datenstrom/yellow. If you can help with ideas or solutions, please [add to discussion #944](https://github.com/datenstrom/yellow/discussions/944). 
-
 ## Examples
 
 Content file to exclude from Mastodon publication: 
