@@ -1,6 +1,6 @@
 <p align="right"><a href="README-de.md">Deutsch</a> &nbsp; <a href="README.md">English</a></p>
 
-# Mastodonbot 0.9.1
+# Mastodonbot 0.9.2
 
 Automatically publish new pages on Mastodon.
 

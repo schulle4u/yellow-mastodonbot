@@ -2,7 +2,7 @@
 // Mastodonbot extension, https://github.com/schulle4u/yellow-mastodonbot
 
 class YellowMastodonbot {
-    const VERSION = "0.9.1";
+    const VERSION = "0.9.2";
     public $yellow;         // access to API
     
     // Handle initialisation
@@ -89,7 +89,7 @@ class MastodonAPI
         if (!$reply) {
             return json_encode(['ok'=>false, 'curl_error_code' => curl_errno($ch), 'curl_error' => curl_error($ch)]);
         }
-        curl_close($ch);
+        if (PHP_VERSION_ID<80000) curl_close($ch);
 
         return json_decode($reply, true);
     }

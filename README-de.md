@@ -1,25 +1,25 @@
 <p align="right"><a href="README-de.md">Deutsch</a> &nbsp; <a href="README.md">English</a></p>
 
-# Mastodonbot 0.9.1
+# Mastodonbot 0.9.2
 
-Neue Seiten automatisch auf Mastodon veröffentlichen.
+Neue Seiten automatisch auf Mastodon verÃ¶ffentlichen.
 
 
 ## Wie man eine Erweiterung installiert
 
 [ZIP-Datei herunterladen](https://github.com/schulle4u/yellow-mastodonbot/archive/refs/heads/main.zip) und in dein `system/extensions`-Verzeichnis kopieren. [Weitere Informationen zu Erweiterungen](https://github.com/annaesvensson/yellow-update/tree/main/README-de.md).
 
-## Wie man neue Seiten auf Mastodon veröffentlicht
+## Wie man neue Seiten auf Mastodon verÃ¶ffentlicht
 
-Erstelle zuerst eine neue App im Entwicklerbereich deiner Mastodon-Instanz, anschließend hinterlege den generierten Zugriffs-Token sowie deinen Instanz-Hostnamen in der Datei `system/extensions/yellow-system.ini`. Jede neue Seite wird bei der Erstellung auf Mastodon veröffentlicht. Setze `Mastodon: exclude` in den [Seiteneinstellungen](https://github.com/annaesvensson/yellow-core#settings-page), um dies für bestimmte Seiten zu verhindern. 
+Erstelle zuerst eine neue App im Entwicklerbereich deiner Mastodon-Instanz, anschlieÃŸend hinterlege den generierten Zugriffs-Token sowie deinen Instanz-Hostnamen in der Datei `system/extensions/yellow-system.ini`. Jede neue Seite wird bei der Erstellung auf Mastodon verÃ¶ffentlicht. Setze `Mastodon: exclude` in den [Seiteneinstellungen](https://github.com/annaesvensson/yellow-core#settings-page), um dies fÃ¼r bestimmte Seiten zu verhindern. 
 
 ## Beispiele
 
-Inhaltsdatei ohne Mastodon-Veröffentlichung: 
+Inhaltsdatei ohne Mastodon-VerÃ¶ffentlichung: 
 
 ```
 ---
-Title: Diese Seite wird nicht auf Mastodon veröffentlicht
+Title: Diese Seite wird nicht auf Mastodon verÃ¶ffentlicht
 Mastodon: exclude
 ---
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna pizza. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. [--more--]
@@ -29,15 +29,15 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 ## Einstellungen
 
-Die folgenden Einstellungen können in der Datei `system/extensions/yellow-system.ini` vorgenommen werden:
+Die folgenden Einstellungen kÃ¶nnen in der Datei `system/extensions/yellow-system.ini` vorgenommen werden:
 
-`MastodonbotApiKey` = Der Zugriffs-Token für deine Mastodon-Instanz  
+`MastodonbotApiKey` = Der Zugriffs-Token fÃ¼r deine Mastodon-Instanz  
 `MastodonbotInstance` = Hostname deiner Mastodon-Instanz  
-`MastodonbotVisibility` = Sichtbarkeit der veröffentlichten Seiten (public, unlisted oder private)  
-`MastodonbotMaxChars` = Maximale Zeichenanzahl für die Seitenzusammenfassung  
-`MastodonbotTemplate` = Vorlage für Mastodonbeiträge  
+`MastodonbotVisibility` = Sichtbarkeit der verÃ¶ffentlichten Seiten (public, unlisted oder private)  
+`MastodonbotMaxChars` = Maximale Zeichenanzahl fÃ¼r die Seitenzusammenfassung  
+`MastodonbotTemplate` = Vorlage fÃ¼r MastodonbeitrÃ¤ge  
 
-Die folgenden Platzhalter können in der Beitragsvorlage verwendet werden:
+Die folgenden Platzhalter kÃ¶nnen in der Beitragsvorlage verwendet werden:
 
 `@title` = Seitentitel  
 `@content` = Seitenauszug  
@@ -45,7 +45,7 @@ Die folgenden Platzhalter können in der Beitragsvorlage verwendet werden:
 
 ## Danksagung
 
-Diese Erweiterung verwendet [MastodonBotPHP](https://github.com/eleirbag89/mastodonbotphp) von Gabriele Grillo. Vielen Dank für die Bibliothek! 
+Diese Erweiterung verwendet [MastodonBotPHP](https://github.com/eleirbag89/mastodonbotphp) von Gabriele Grillo. Vielen Dank fÃ¼r die Bibliothek! 
 
 ## Entwickler
 
